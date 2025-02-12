@@ -13,7 +13,6 @@ const TableRow = ({ row, originalValues, updateByPercentage, updateByValue }) =>
         </td>
         <td>{row.value.toFixed(2)}</td>
 
-        {/* Use the Controls component only for child rows */}
         {row.children ? <><td></td><td></td><td></td></> : (
           <Controls rowId={row.id} updateByPercentage={updateByPercentage} updateByValue={updateByValue} />
         )}
