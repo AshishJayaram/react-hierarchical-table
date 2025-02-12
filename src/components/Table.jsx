@@ -1,5 +1,5 @@
-import React from 'react';
-import TableRow from './TableRow';
+import React from "react";
+import TableRow from "./TableRow";
 
 const Table = ({ rows, originalValues, updateByPercentage, updateByValue }) => {
   return (
@@ -15,7 +15,7 @@ const Table = ({ rows, originalValues, updateByPercentage, updateByValue }) => {
         </tr>
       </thead>
       <tbody>
-        {rows.map((row) => (
+        {rows.map(row => (
           <TableRow
             key={row.id}
             row={row}
